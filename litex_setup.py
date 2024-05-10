@@ -96,7 +96,7 @@ git_repos = {
 
     # LiteX Boards.
     # -------------
-    "litex-boards": GitRepo(url="https://github.com/litex-hub/", clone="regular", tag=True),
+    "litex-boards": GitRepo(url="https://github.com/UEFICharlesZhang/", clone="regular", tag=True),
 
     # LiteX pythondata.
     # -----------------
