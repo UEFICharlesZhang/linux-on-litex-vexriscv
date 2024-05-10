@@ -764,7 +764,7 @@ class Milianke_100t(Board):
         Board.__init__(self, milianke_artix7.BaseSoC, soc_capabilities={
             # Communication
             "serial",
-            "sdcard",
+            "spisdcard",
             "spiflash",
             "ethernet",
         })
