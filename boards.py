@@ -742,3 +742,18 @@ class Sipeed_tang_primer_20k(Board):
             "serial",
             "spisdcard",
         })
+
+        
+# Milianke_100t support -------------------------------------------------------------------
+
+class Milianke_100t(Board):
+    soc_kwargs = {"l2_size" : 8192} # Use Wishbone and L2 for memory accesses.
+    def __init__(self):
+        from litex_boards.targets import milianke_artix7
+        Board.__init__(self, milianke_artix7.BaseSoC, soc_capabilities={
+            # Communication
+            "serial",
+            "sdcard",
+            "spiflash",
+            "ethernet",
+        })
